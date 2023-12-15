@@ -3,7 +3,7 @@ mod ui;
 mod utils;
 // mod utils::error;
 
-use video::{utils::error, ui::terminal::start_terminal};
+use crate::{utils::error, ui::terminal::start_terminal};
 fn main() -> error::Result<()>{
     
 
