@@ -21,6 +21,8 @@ pub enum VideoError {
     ImageDecodeError(#[from] image::ImageError),
 
 
+    // #[error("Could not decode this image")]
+    // ImageReadingError(#[from] image::ImageError),
     
 
 }

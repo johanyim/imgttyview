@@ -21,8 +21,8 @@ use crate::utils::error;
 
 
 pub fn start_terminal() -> error::Result<Terminal> {
-    // stdout().execute(EnterAlternateScreen)?;
-    // enable_raw_mode()?;
+    stdout().execute(EnterAlternateScreen)?;
+    enable_raw_mode()?;
     let terminal = Terminal::new(CrosstermBackend::new(stdout()))?;
     return Ok(terminal)
 }
