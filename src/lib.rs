@@ -1,4 +1,5 @@
 pub mod commands;
+pub mod files;
 
 pub mod ui {
     pub mod terminal;

@@ -5,10 +5,10 @@ use thiserror::Error;
 
 // mod ui;
 
-pub type Result<T> = result::Result<T, VideoError>;
+pub type Result<T> = result::Result<T, Error>;
 
 #[derive(Error, Debug)]
-pub enum VideoError {
+pub enum Error {
     #[error("File could not be found at {0}.")]
     FileNotFound(String),
 
